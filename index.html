@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 2D GAME</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="./icon.png" />
+  </head>
+  <body>
+    <canvas id="canvas1"></canvas>
+
+    <img id="dinoImage" src="./assets/spritesheet.png" alt="Dinosaur" />
+    <img id="backroundImage" src="./assets/background.png" alt="Background" />
+    <img id="obstacleImage" src="./assets/obstacle.png" alt="Obstacle" />
+
+    <div class="message">
+      <h1>Welcome to the 2D Dino Game</h1>
+      <p>
+        Stear clear of the Cacti! Press the spacebar to start and the up button
+        (↑) to jump. Use the back and forth buttons
+      </p>
+      <p>to move your Dino across the screen.</p>
+      <p>
+        Don't forget to pick your prefered difficulty level from the dropdown
+        menu.
+      </p>
+    </div>
+
+    <select id="dropdown" class="custom-dropdown">
+      <option value="0.5" class="easy-option">Easy</option>
+      <option value="1" class="intermediate-option" selected>
+        Intermediate
+      </option>
+      <option value="3" class="difficult-option">Difficult</option>
+    </select>
+
+    <script src="script.js"></script>
+  </body>
+</html>
